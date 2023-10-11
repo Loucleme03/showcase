@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <title> Trip to England Destinations </title>
+       <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+ <!-- setting map as a unique id and html,body is required so that the map can open into the window -->
+       <style>
+         #map {
+             height: 100%;
+         }
+         html,
+         body {
+             height: 100%;
+             margin: 0;
+             padding: 0;
+         }
+       </style>
+<!-- Calling the javascript document -->
+       <script type="module" src="Demo1.js"></script>
+    </head>
+    <body>
+      <div id="map"></div>
+  <!--the running script of the map with proper API code-->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv3MGflguusDaLmV_-BUlmuoUI4EbM88w&callback=initMap&v=weekly"
+      defer>
+      </script>
+    </body>
+</html>
