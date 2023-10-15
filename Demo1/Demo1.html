@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-       <title> Trip to England Destinations </title>
-       <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="Javascript.js" ></script>
+  <script type="module" src="Demo1.js"></script>
+  <title>Showcase</title>
+</head> 
  <!-- setting map as a unique id and html,body is required so that the map can open into the window -->
-       <style>
-         #map {
-             height: 100%;
-         }
-         html,
-         body {
-             height: 100%;
-             margin: 0;
-             padding: 0;
-         }
-       </style>
-<!-- Calling the javascript document -->
-       <script type="module" src="Demo1.js"></script>
-    </head>
-    <body>
-      <div id="map"></div>
+<style>
+   #map {
+      height: 100%;
+  }
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+  }   
+</style>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="Demo1/Demo1.html">Demo 1</a>
+    <a href="Demo2/Demo2.html">Demo 2</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i></a>
+ </div>
+ <div id="map"></div>
   <!--the running script of the map with proper API code-->
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfdGwyPgo-asKUjSai5PuDozAW6yROGMg&callback=initMap&v=weekly"
-      defer>
-      </script>
-    </body>
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfdGwyPgo-asKUjSai5PuDozAW6yROGMg&callback=initMap&v=weekly" defer> </script>
+</body>
 </html>
