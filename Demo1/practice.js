@@ -1,3 +1,14 @@
+// Navbar
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+// Demo 1 Javascript 
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
         center: {lat: 52.068, lng: -1.773},
