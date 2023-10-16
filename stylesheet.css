@@ -10,7 +10,7 @@ body {
 
 #map {
   height: 100%;
-  Margin-left: 25%;
+  margin-left: 25%;
 }
 
 .bodybox {
@@ -68,7 +68,7 @@ body {
     display: block;
  }
 .container {
-    padding-top: 15%;
+  padding-top: 15%;
   margin: 0;
  }
 #map {
