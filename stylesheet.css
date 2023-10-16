@@ -104,8 +104,6 @@ body {
 /* Position the image container (needed to position the left and right arrows) */
 .container2 {
   position: relative;
-  width: 100%;
-  height: auto;
 }
 
 /* Hide the images by default */
