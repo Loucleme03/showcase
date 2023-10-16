@@ -56,18 +56,17 @@ body {
 @media screen and (max-width: 600px) {
 .topnav a {
   display: none;
-}
+ }
 .topnav {     
     width: 100%;
     height: auto;
     display: block;
     position: relative;
-}
+ }
 .topnav a.icon {
     float: right;
     display: block;
-}
-  
+ }
 .container {
     padding-top: 15%;
  }
@@ -75,7 +74,7 @@ body {
   margin: 0;
   overflow: hidden;
   position: relative;
- 
+ } 
 }
 
 @media screen and (max-width: 600px) {
