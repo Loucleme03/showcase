@@ -95,17 +95,18 @@ body {
 }
   
 /* slideshow css */
-* {
-  box-sizing: border-box;
-}
 
-img {
+.imgDisplay {
   vertical-align: middle;
+  width: 100%
+  height: auto;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
 .container2 {
   position: relative;
+  width: 100%;
+  height: auto;
 }
 
 /* Hide the images by default */
