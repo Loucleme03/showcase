@@ -8,6 +8,11 @@ body {
   padding: 1px 16px;
   }
 
+#map {
+  height: 100%;
+  Margin-left: 25%;
+}
+
 .bodybox {
   background-colour: lavender;
   padding: 10px;
@@ -70,7 +75,7 @@ body {
   margin: 0;
   overflow: hidden;
   position: relative;
-  width: 100%;
+ 
 }
 
 @media screen and (max-width: 600px) {
