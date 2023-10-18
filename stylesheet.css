@@ -28,13 +28,13 @@ body {
 }
 
 .button {
-    background-color: #2E8BC0;
+    background-color: cadetblue;
     color: white;
     font-family: initial;
-    padding: 16px 32px;
+    padding: 12px 24px;
     text-align: center;
     display: inline-block;
-    font-size: 28px;
+    font-size: 20px;
     margin: 4px 2px;
     cursor: pointer;
     text-decoration: none;
