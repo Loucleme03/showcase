@@ -42,7 +42,7 @@ body {
 }
 
 .footerPosition {
-    position: absolute; 
+    position: relative; 
     margin-left: 25%;
     bottom: 0;
     width: 100%;
@@ -121,7 +121,6 @@ nav a.icon {
  } 
  .footerPosition {
    margin: 0;
-   position: relative;
 }
 }
 @media screen and (max-width: 600px) {
