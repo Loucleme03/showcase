@@ -42,7 +42,8 @@ body {
 }
 
 .footerPosition {
-    position: relative;
+    position: absolute;
+    margin-left: 25%;
     bottom: 0;
     width: 100%;
     background-image: linear-gradient(to bottom right,  #131f20, cadetblue);
@@ -118,6 +119,8 @@ nav a.icon {
   overflow: hidden;
   position: relative;
  } 
+ .footerPosition {
+   margin: 0;
 }
 
 @media screen and (max-width: 600px) {
