@@ -123,7 +123,7 @@ nav a.icon {
    margin: 0;
    position: relative;
 }
-
+}
 @media screen and (max-width: 600px) {
   nav.responsive {
     position: realtive;
@@ -148,8 +148,13 @@ nav a.icon {
   height: auto;
 }
 
-.mySlides {display: none}
-img {vertical-align: middle;}
+.mySlides {
+  display: none;
+}
+  
+img {
+  vertical-align: middle;
+}
 
 /* Slideshow container */
 .slideshow-container {
