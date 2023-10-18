@@ -21,6 +21,21 @@ body {
 .underline {
   border-bottom-style: solid;
 }
+
+.footerPosition {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: Black;
+    color: seashell;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerText {
+  text-align: left;
+}
+
 .topnav {
   position: fixed;
   margin: 0;
