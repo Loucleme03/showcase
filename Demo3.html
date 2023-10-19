@@ -1,0 +1,74 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>ArcGIS Maps SDK for JavaScript Tutorials: Display a Web Map</title>
+  <style>
+    html, body,{
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      color: #323232;
+    }
+  </style>
+  <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css">
+  <script src="https://js.arcgis.com/4.26/"></script>
+
+  <script>
+    require([
+      "esri/config",
+      "esri/WebMap",
+      "esri/views/MapView",
+      "esri/widgets/LayerList",
+      "esri/widgets/Legend"
+    ], function(esriConfig, WebMap, MapView,LayerList, Legend) {
+
+      esriConfig.apiKey = "AAPK4d7aa34174e8497d8e8d10189e6a88f8B9cgmO9GN1kDtF5i2hkYZr_5OukxG3z6lHj1DrW86ytYkIiWRGhrcXYUHG6-pJls";
+
+      const webmap = new WebMap({
+        portalItem: {
+          id: "307a93439f0946ff9bf8683c925ebfcf"
+        }
+      });
+
+      const view = new MapView({
+        container: "map",
+        center: [-79.036, 44.6425],
+        zoom: 11,
+        map: webmap,
+        constraints: {
+          maxZoom: 18,
+          minZoom: 11,
+        }
+
+      });
+      view.when(() => {
+        const layerList = new LayerList({
+          view: view
+        });
+        
+    // Add widget to the top right corner of the view
+        view.ui.add(layerList, "top-right");
+        });
+      const legend = new Legend ({
+        view: view
+      });
+      view.ui.add(legend, "top-right");
+
+  });
+  </script>
+</head>
+<body>
+  <div id="map"></div>
+</body>
+</html>
