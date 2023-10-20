@@ -1,7 +1,7 @@
 // Demo 4 - esri-Leaflet Map    
 //Create Map set View
      const apiKey = "AAPK12b8f9e1da2940bbbe0febf69977fe0eRsGXL4uHQ8jvzClzGSzqfQRamq1XnSFNukmkNN0wrlrtSJriluYaeTPmVwwEpgCS";
-      const basemapEnum = "ArcGIS:LightGray:Base";
+      const basemapEnum = "ArcGIS:LightGray";
       const map2 = L.map("map2", {
         minZoom: 2
       }).setView([44.6308, -79.0548], 12); 
