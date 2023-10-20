@@ -200,7 +200,7 @@ function showSlides(n) {
         zoomOffsetAllowance: 0.6,
         opacity: 1,
         }).addTo(map2);    
-      map.getPane("tilePane").style.zIndex = 450;
+      map2.getPane("tilePane").style.zIndex = 450;
   // Create raster tile image from 2022          
        var NewCarden = L.esri.tiledMapLayer({
         url: "https://tiles.arcgis.com/tiles/pMeXRvgWClLJZr3s/arcgis/rest/services/Carden2021_WTL1/MapServer",
@@ -208,7 +208,7 @@ function showSlides(n) {
        zoomOffsetAllowance: 0.6,
         opacity: 1,
       }).addTo(map2);   
-      map.getPane("tilePane").style.zIndex = 450;
+      map2.getPane("tilePane").style.zIndex = 450;
 
      // use function to be able to change opacity with slider
     // Needs to be done on NewCarden since it was added last to the Javascript
