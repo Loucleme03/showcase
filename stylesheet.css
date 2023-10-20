@@ -239,3 +239,14 @@ img {
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 } 
+
+/* format for slider in demo 4 */
+ .sliderPara {
+    color: black;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    padding-left: 40px;
+    z-index: 1000;
+    position: relative;
+
+ }
