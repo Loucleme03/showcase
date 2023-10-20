@@ -137,3 +137,47 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+
+// ArcGIS maps SDK for Javascript
+    require([
+      "esri/config",
+      "esri/WebMap",
+      "esri/views/MapView",
+      "esri/widgets/LayerList",
+      "esri/widgets/Legend"
+    ], function(esriConfig, WebMap, MapView,LayerList, Legend) {
+
+      esriConfig.apiKey = "AAPK4d7aa34174e8497d8e8d10189e6a88f8B9cgmO9GN1kDtF5i2hkYZr_5OukxG3z6lHj1DrW86ytYkIiWRGhrcXYUHG6-pJls";
+
+      const webmap = new WebMap({
+        portalItem: {
+          id: "307a93439f0946ff9bf8683c925ebfcf"
+        }
+      });
+
+      const view = new MapView({
+        container: "map",
+        center: [-79.036, 44.6425],
+        zoom: 11,
+        map: webmap,
+        constraints: {
+          maxZoom: 18,
+          minZoom: 11,
+        }
+
+      });
+      view.when(() => {
+        const layerList = new LayerList({
+          view: view
+        });
+        
+    // Add widget to the top right corner of the view
+        view.ui.add(layerList, "top-right");
+        });
+      const legend = new Legend ({
+        view: view
+      });
+      view.ui.add(legend, "top-right");
+
+  });
