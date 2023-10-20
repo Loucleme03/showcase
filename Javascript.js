@@ -149,7 +149,7 @@ function showSlides(n) {
     ], function(esriConfig, WebMap, MapView,LayerList, Legend) {
 
       esriConfig.apiKey = "AAPK12b8f9e1da2940bbbe0febf69977fe0eRsGXL4uHQ8jvzClzGSzqfQRamq1XnSFNukmkNN0wrlrtSJriluYaeTPmVwwEpgCS";
-
+ 
       const webmap = new WebMap({
         portalItem: {
           id: "307a93439f0946ff9bf8683c925ebfcf"
@@ -165,7 +165,6 @@ function showSlides(n) {
           maxZoom: 18,
           minZoom: 11,
         }
-
       });
       view.when(() => {
         const layerList = new LayerList({
@@ -185,7 +184,7 @@ function showSlides(n) {
 //--------------------------------------------------------------------------------------------
 // Demo 4 - esri-Leaflet Map    
 //Create Map set View
-     const apiKey = "AAPK4d7aa34174e8497d8e8d10189e6a88f8B9cgmO9GN1kDtF5i2hkYZr_5OukxG3z6lHj1DrW86ytYkIiWRGhrcXYUHG6-pJls";
+     const apiKey = "AAPK12b8f9e1da2940bbbe0febf69977fe0eRsGXL4uHQ8jvzClzGSzqfQRamq1XnSFNukmkNN0wrlrtSJriluYaeTPmVwwEpgCS";
       const basemapEnum = "ArcGIS:LightGray:Base";
       const map2 = L.map("map2", {
         minZoom: 2
