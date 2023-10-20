@@ -13,6 +13,11 @@ body {
   margin-left: 25%;
 }
 
+#map2 {
+  height: 100%;
+  margin-left: 25%;
+}
+
 .bodybox {
   background-colour: lavender;
   padding: 10px;
