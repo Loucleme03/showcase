@@ -7,7 +7,7 @@ function myFunction() {
     x.className = "topnav";
   }
 }
-
+//---------------------------------------------------------------------------------
 // Demo 1 Javascript 
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
@@ -109,8 +109,8 @@ function animateCircle(line) {
 //function to open in window
 window.initMap = initMap;
 
-
-// Slideshow Javascript
+//-----------------------------------------------------------------------------------------------------------
+// Demo 2 Slideshow Javascript
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -138,7 +138,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-
+//---------------------------------------------------------------------------------------------------
 // ArcGIS maps SDK for Javascript
     require([
       "esri/config",
