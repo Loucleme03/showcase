@@ -10,12 +10,13 @@
       height: 100%;
       width: 100%;
     }
-    #map {
+    #map3 {
       position: absolute;
       top: 0;
       bottom: 0;
       right: 0;
       left: 0;
+      margin-left: 25%;
       font-family: Arial, Helvetica, sans-serif;
       font-size: 14px;
       color: #323232;
@@ -23,17 +24,16 @@
   </style>
   <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css">
   <script src="https://js.arcgis.com/4.26/"></script>
-
+  <script src= Javascript.js></script>
   <script>
     require([
       "esri/config",
       "esri/WebMap",
       "esri/views/MapView",
       "esri/widgets/LayerList",
-      "esri/widgets/Legend"
-    ], function(esriConfig, WebMap, MapView,LayerList, Legend) {
-
-      esriConfig.apiKey = "AAPK4d7aa34174e8497d8e8d10189e6a88f8B9cgmO9GN1kDtF5i2hkYZr_5OukxG3z6lHj1DrW86ytYkIiWRGhrcXYUHG6-pJls";
+       ],
+      function(esriConfig, WebMap, MapView,LayerList, Legend) {
+         esriConfig.apiKey = "AAPK12b8f9e1da2940bbbe0febf69977fe0eRsGXL4uHQ8jvzClzGSzqfQRamq1XnSFNukmkNN0wrlrtSJriluYaeTPmVwwEpgCS";
 
       const webmap = new WebMap({
         portalItem: {
@@ -42,7 +42,7 @@
       });
 
       const view = new MapView({
-        container: "map",
+        container: "map3",
         center: [-79.036, 44.6425],
         zoom: 11,
         map: webmap,
@@ -64,11 +64,22 @@
         view: view
       });
       view.ui.add(legend, "top-right");
-
   });
   </script>
 </head>
 <body>
-  <div id="map"></div>
+  <nav id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="Demo1.html" class="active">Demo 1</a>
+  <a href="Demo2.html">Demo 2</a>
+  <a href="Demo3.html">Demo 3</a>
+  <a href="Demo4.html">Demo 4</a>
+  <a href="Demo5.html">Demo 5</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</nav>
+  
+  <div id="map3"></div>
 </body>
 </html>
