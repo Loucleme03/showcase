@@ -183,10 +183,7 @@ function showSlides(n) {
   });
 
 //--------------------------------------------------------------------------------------------
-// Demo 4 - esri-Leaflet Map
-
-// Leaflet map designed and edited by entire group 
-     
+// Demo 4 - esri-Leaflet Map    
 //Create Map set View
      const apiKey = "AAPK4d7aa34174e8497d8e8d10189e6a88f8B9cgmO9GN1kDtF5i2hkYZr_5OukxG3z6lHj1DrW86ytYkIiWRGhrcXYUHG6-pJls";
       const basemapEnum = "ArcGIS:LightGray:Base";
