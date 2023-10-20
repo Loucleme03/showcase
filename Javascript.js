@@ -190,7 +190,7 @@ function showSlides(n) {
       const map2 = L.map("map2", {
         minZoom: 2
       }).setView([44.6308, -79.0548], 12); 
-        L.esri.Vector.vectorBasemapLayer(basemapEnum, {
+     L.esri.Vector.vectorBasemapLayer(basemapEnum, {
         apiKey: apiKey
       }).addTo(map2);
 // Create raster tile image from 1984      
