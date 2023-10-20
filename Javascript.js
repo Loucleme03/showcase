@@ -148,7 +148,7 @@ function showSlides(n) {
       "esri/widgets/Legend"
     ], function(esriConfig, WebMap, MapView,LayerList, Legend) {
 
-      esriConfig.apiKey = "AAPK4d7aa34174e8497d8e8d10189e6a88f8B9cgmO9GN1kDtF5i2hkYZr_5OukxG3z6lHj1DrW86ytYkIiWRGhrcXYUHG6-pJls";
+      esriConfig.apiKey = "AAPK12b8f9e1da2940bbbe0febf69977fe0eRsGXL4uHQ8jvzClzGSzqfQRamq1XnSFNukmkNN0wrlrtSJriluYaeTPmVwwEpgCS";
 
       const webmap = new WebMap({
         portalItem: {
