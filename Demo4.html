@@ -13,12 +13,29 @@
     <script src="https://unpkg.com/esri-leaflet-vector@4.0.1/dist/esri-leaflet-vector.js"></script>
     <script type="text/javascript" src="Javascript.js" defer ></script>
   </head>
+    <style>  
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+     }
+    </style>
   <body>
-   <div class = "sliderPara">
-    <p> 1984 <input id="slide" type="range" min="0" max="1" step="0.2" value="1" onchange="updateOpacity(this.value)"> 2021</p>
-   </div>
+ <nav id="myTopnav">
+     <a href="index.html" ">Home</a>
+     <a href="Demo1.html" class="active">Demo 1</a>
+     <a href="Demo2.html">Demo 2</a>
+     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+     <i class="fa fa-bars"></i>
+     </a>
+ </nav>
+   <div class = "container">    
+     <div class = "sliderPara">
+       <p> 1984 <input id="slide" type="range" min="0" max="1" step="0.2" value="1" onchange="updateOpacity(this.value)"> 2021</p>
+     </div>
    
-    <div id="map"></div>
+     <div id="map"></div>
+   </div>   
   </body>
 
 </html>
