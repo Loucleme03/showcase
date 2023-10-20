@@ -190,20 +190,19 @@ function showSlides(n) {
 //Create Map set View
      const apiKey = "AAPK4d7aa34174e8497d8e8d10189e6a88f8B9cgmO9GN1kDtF5i2hkYZr_5OukxG3z6lHj1DrW86ytYkIiWRGhrcXYUHG6-pJls";
       const basemapEnum = "ArcGIS:LightGray:Base";
-      const map = L.map("map", {
+      const map2 = L.map("map2", {
         minZoom: 2
       }).setView([44.6308, -79.0548], 12); 
-      
-      L.esri.Vector.vectorBasemapLayer(basemapEnum, {
+        L.esri.Vector.vectorBasemapLayer(basemapEnum, {
         apiKey: apiKey
-      }).addTo(map);
+      }).addTo(map2);
 // Create raster tile image from 1984      
     var OldCarden = L.esri.tiledMapLayer({
         url: "https://tiles.arcgis.com/tiles/pMeXRvgWClLJZr3s/arcgis/rest/services/Carden1984_WTL1/MapServer",
        apiKey: apiKey,
         zoomOffsetAllowance: 0.6,
         opacity: 1,
-        }).addTo(map);    
+        }).addTo(map2);    
       map.getPane("tilePane").style.zIndex = 450;
   // Create raster tile image from 2022          
        var NewCarden = L.esri.tiledMapLayer({
@@ -211,7 +210,7 @@ function showSlides(n) {
        apiKey: apiKey,
        zoomOffsetAllowance: 0.6,
         opacity: 1,
-      }).addTo(map);   
+      }).addTo(map2);   
       map.getPane("tilePane").style.zIndex = 450;
 
      // use function to be able to change opacity with slider
@@ -224,6 +223,6 @@ function showSlides(n) {
         metric: true,
         imperial: false,
         position: 'bottomleft'
-      }).addTo(map);
+      }).addTo(map2);
     
 
