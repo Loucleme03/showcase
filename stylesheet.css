@@ -123,9 +123,14 @@ nav a.icon {
   overflow: hidden;
   position: relative;
  } 
- .footerPosition {
+#map2 {
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+ } 
+  .footerPosition {
    margin: 0;
-}
+ }
 }
 @media screen and (max-width: 600px) {
   nav.responsive {
