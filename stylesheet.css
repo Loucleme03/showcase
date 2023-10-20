@@ -61,7 +61,6 @@ nav {
   position: fixed;
   margin: 0;
   padding: 0;
-  background-color: #333;
   width: 25%;
   height: 100%;
   overflow: auto;
@@ -83,12 +82,12 @@ nav a {
   }
 
 nav a:hover {
-  background-color: #ddd;
+  background-color: #70a7a9;
   color: black;
 }
 
 nav a.active {
-  background-color: #04AA6D;
+  background-color: #70a7a9;
   color: white;
 }
 
