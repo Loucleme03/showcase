@@ -157,7 +157,7 @@ function showSlides(n) {
       });
 
       const view = new MapView({
-        container: "map",
+        container: "map3",
         center: [-79.036, 44.6425],
         zoom: 11,
         map: webmap,
