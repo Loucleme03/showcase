@@ -26,47 +26,6 @@
   <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css">
   <script src="https://js.arcgis.com/4.26/"></script>
   <script src= Javascript.js></script>
-  <script>
-    require([
-      "esri/config",
-      "esri/WebMap",
-      "esri/views/MapView",
-      "esri/widgets/LayerList",
-       ],
-      function(esriConfig, WebMap, MapView,LayerList, Legend) {
-         esriConfig.apiKey = "AAPK12b8f9e1da2940bbbe0febf69977fe0eRsGXL4uHQ8jvzClzGSzqfQRamq1XnSFNukmkNN0wrlrtSJriluYaeTPmVwwEpgCS";
-
-      const webmap = new WebMap({
-        portalItem: {
-          id: "307a93439f0946ff9bf8683c925ebfcf"
-        }
-      });
-
-      const view = new MapView({
-        container: "map3",
-        center: [-79.036, 44.6425],
-        zoom: 11,
-        map: webmap,
-        constraints: {
-          maxZoom: 18,
-          minZoom: 11,
-        }
-
-      });
-      view.when(() => {
-        const layerList = new LayerList({
-          view: view
-        });
-        
-    // Add widget to the top right corner of the view
-        view.ui.add(layerList, "top-right");
-        });
-      const legend = new Legend ({
-        view: view
-      });
-      view.ui.add(legend, "top-right");
-  });
-  </script>
 </head>
 <body>
   <nav id="myTopnav">
