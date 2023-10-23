@@ -47,7 +47,7 @@ body {
 }
 
 .footerPosition {
-    position: fixed; 
+    position: relative; 
     margin-left: 25%;
     bottom: 0;
     width: 100%;
