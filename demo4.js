@@ -1,7 +1,7 @@
 // Demo 4 - esri-Leaflet Map    
 //Create Map set View
-     const apiKey = "AAPK12b8f9e1da2940bbbe0febf69977fe0eRsGXL4uHQ8jvzClzGSzqfQRamq1XnSFNukmkNN0wrlrtSJriluYaeTPmVwwEpgCS";
-      const basemapEnum = "ArcGIS:LightGray";
+     const apiKey = "AAPKf07cb82d9eca4d1bb282c457f31e98989hugHldsf54OiHoyG5H2qoN5Esp1pdJcuZV3F1fKwh4PPQF8uOzqkGAtY8T0JZxg";
+      const basemapEnum = "arcgis/light-gray/base";
       const map2 = L.map("map2", {
         minZoom: 2
       }).setView([44.6308, -79.0548], 12); 
@@ -30,8 +30,9 @@
       function updateOpacity(value) {
         NewCarden.setOpacity(value);
       }
+
 // create scale bar in bottom left corner
-      L.control.scale ({
+      L.control.scale ({ 
         metric: true,
         imperial: false,
         position: 'bottomleft'
