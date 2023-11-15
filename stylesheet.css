@@ -148,15 +148,12 @@ nav a.icon {
  .footerPosition {
    margin: 0; 
  }
-}  
-
-@media screen and (min-width: 600px {
-   .footerPosition2 {
+ .footerPosition2 {
     position: relative;
     margin: 0;
     width: 100%;
  }
-}
+}  
 
 @media screen and (max-width: 600px) {
   nav.responsive {
