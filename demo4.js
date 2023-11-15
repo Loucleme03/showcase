@@ -4,7 +4,7 @@
       const basemapEnum = "arcgis/light-gray/base";
       const map2 = L.map("map2", {
         minZoom: 2
-      }).setView([44.6308, -79.0548], 12); 
+      }).setView([44.6308, -79.0548], 11); 
      L.esri.Vector.vectorBasemapLayer(basemapEnum, {
         apiKey: apiKey
       }).addTo(map2);
