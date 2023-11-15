@@ -66,6 +66,7 @@ body {
 .footerPosition2 {
     position: fixed; 
     bottom: 0;
+    margin-left: 25%;
     background-image: linear-gradient(to bottom right,  #131f20, cadetblue);
     color: seashell;
     display: flex;
@@ -153,8 +154,6 @@ nav a.icon {
  }
  .footerPosition2 {
     position: relative;
-    margin-left: 25%;
-    width: 100%;
  }
 }  
 
