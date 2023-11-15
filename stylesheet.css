@@ -148,12 +148,15 @@ nav a.icon {
  .footerPosition {
    margin: 0; 
  }
- .footerPosition2 {
+}  
+
+@media screen and (max-width: 1000px {
+   .footerPosition2 {
     position: relative;
     margin: 0;
     width: 100%;
  }
-}  
+}
 
 @media screen and (max-width: 600px) {
   nav.responsive {
@@ -276,7 +279,6 @@ img {
 /* format for slider in demo 4 */
  .sliderPara {
     color: black;
-    font-size: 25px;
     font-family: Arial, sans-serif;
     padding-left: 40px;
     position: relative;
