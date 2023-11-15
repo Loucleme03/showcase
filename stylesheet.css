@@ -60,7 +60,16 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.footerPosition2 {
+    position: fixed; 
+    margin-left: 25%;
+    bottom: 0;
+    background-image: linear-gradient(to bottom right,  #131f20, cadetblue);
+    color: seashell;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .footerText {
   text-align: left;
 }
@@ -136,9 +145,12 @@ nav a.icon {
   position: relative;
  } 
   .footerPosition {
-   margin: 0;
+   margin: 0; 
  }
+  .footerPosition2 {
+    position: relative;
 }
+  
 @media screen and (max-width: 600px) {
   nav.responsive {
     position: realtive;
