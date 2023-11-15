@@ -66,6 +66,7 @@ body {
 .footerPosition2 {
     position: fixed; 
     bottom: 0;
+    width: 75%;
     margin-left: 25%;
     background-image: linear-gradient(to bottom right,  #131f20, cadetblue);
     color: seashell;
@@ -115,11 +116,6 @@ nav .icon {
   display: none;
 }
 
-@media screen and (max-width: 1200px) {
-  .footerposition {
-    position: fixed;
-  }
-}  
 
 @media screen and (max-width: 600px) {
 nav a {
