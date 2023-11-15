@@ -5,7 +5,8 @@ body {
 
 .container {
  margin-left: 25%;
-  padding: 1px 16px;
+  padding: 20px;
+  background-image: linear-gradient(to bottom right, cadetblue, #131f20);
   }
 
 #map {
@@ -18,9 +19,9 @@ body {
   margin-left: 25%;
 }
 
-.bodybox {
-  background-colour: lavender;
-  padding: 10px;
+.subContainer {
+  background: $f0f0f5;
+  padding: 60px;
 }
 
 .underline {
