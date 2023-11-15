@@ -114,7 +114,7 @@ nav .icon {
   .footerposition {
     position: fixed;
   }
-  
+}  
 @media screen and (max-width: 600px) {
 nav a {
   display: none;
@@ -150,8 +150,8 @@ nav a.icon {
     position: relative;
     margin-left: 25%;
     width: 100%;
-}
-  
+ }
+}  
 @media screen and (max-width: 600px) {
   nav.responsive {
     position: realtive;
