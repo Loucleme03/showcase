@@ -150,6 +150,8 @@ nav a.icon {
  }
  .footerPosition2 {
     position: relative;
+    margin: 0;
+    width: 100%;
  }
 }  
 
