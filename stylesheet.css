@@ -50,7 +50,6 @@ body {
     position: relative; 
     margin-left: 25%;
     bottom: 0;
-    width: 100%;
     background-image: linear-gradient(to bottom right,  #131f20, cadetblue);
     color: seashell;
     display: flex;
@@ -99,7 +98,11 @@ nav a.active {
 nav .icon {
   display: none;
 }
-
+@media screen and (max-width: 1200px) {
+  .footerposition {
+    position: fixed;
+  }
+  
 @media screen and (max-width: 600px) {
 nav a {
   display: none;
