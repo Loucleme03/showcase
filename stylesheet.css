@@ -23,7 +23,10 @@ body {
   background: #cdd9e9;
   padding: 60px;
 }
-
+.subContainer2 {
+  background: #cdd9e9;
+  padding: 1px;
+}
 .underline {
   border-bottom-style: solid;
 }
@@ -257,10 +260,9 @@ img {
 /* format for slider in demo 4 */
  .sliderPara {
     color: black;
-    font-size: 30px;
+    font-size: 25px;
     font-family: Arial, sans-serif;
     padding-left: 40px;
-    z-index: 1000;
     position: relative;
 
  }
