@@ -192,6 +192,7 @@ img {
   max-width: 800px;
   position: relative;
   margin: auto;
+  border: solid;
 }
 
 /* Next & previous buttons */
